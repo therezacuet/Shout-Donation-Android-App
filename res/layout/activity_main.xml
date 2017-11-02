@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="#11232E"
+    tools:context=".MainActivity" >
+    <LinearLayout 
+       android:id="@+id/splash"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="visible"
+       android:weightSum="7"
+       android:background="#11232E"
+       android:orientation="vertical">
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical" >
+        <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+		android:scaleType="fitXY"        
+		android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like you never before"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textColor="#009A79"
+            android:textSize="25sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webView1"
+        android:background="#11232E"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+</LinearLayout>
